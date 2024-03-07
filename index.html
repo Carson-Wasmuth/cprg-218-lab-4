@@ -9,58 +9,13 @@
   <link rel="stylesheet" type="text/css" href="/styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <title>Common Website Features</title>
-  <style>
-    /* Styles for accordion */
-    .accordion-item input[type="checkbox"] {
-      display: none;
-    }
-    .accordion-item .accordion-title {
-      cursor: pointer;
-      padding: 10px;
-      border: 1px solid #000000;
-      border-bottom: none;
-      background-color: #000000;
-    }
-    .accordion-item .accordion-content {
-      display: none;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-top: none;
-    }
-    .accordion-item input[type="checkbox"]:checked + .accordion-title + .accordion-content {
-      display: block;
-    }
-    .footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-    .footer-links {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .footer-links li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    .footer-map {
-      margin-top: 20px;
-    }
-    .footer-map iframe {
-      width: 100%;
-      height: 200px;
-    }
-  </style>
+  <title>Game Traders</title>
 </head>
 <body>
   <section class="hero-container">
     <div class="hero-content">
       <h1>Welcome to Game Traders</h1>
       <p>The world of gaming has never been more accessible. With a wide selection of consoles, games, and accessories we ensure you that whatever you are searching for, Game Traders has it.</p>
-      <a href="#" class="btn">Learn More</a>
     </div>
     <img src="assets/herobanner.jpg" alt="Hero Image">
   </section>
@@ -71,29 +26,27 @@
       <div class="service">
         <img src="assets/content.jpg" alt="Service Image">
         <h3>Wide Selection</h3>
-        <p>We have a large collection of items from any corner of gaming that you could imagine. Come see for yourself and get whisked away.</p>
-        <a href="#" class="btn">Learn More</a>
+        <p>We have a large collection of items from any corner of the gaming world that you can imagine. Come see for yourself and get whisked away with the possibilities.</p>
+        <a href="#" class="btn">Browse Items</a>
       </div>
-      <!-- Additional service sections can be added here -->
     </div>
   </section>
   <section class="container accordion-container">
     <div class="accordion">
-        <div class="accordion-item">
+        <div class="accordion-item" id="aboutus-accordion">
             <input type="checkbox" id="accordion-item-1">
-            <label class="accordion-title" for="accordion-item-1"><i class="fas fa-chevron-down"></i> Accordion Item 1</label>
+            <label class="accordion-title" for="accordion-item-1"><i class="fas fa-chevron-down"></i> Who Are We? </label>
             <div class="accordion-content">
-                <p>Content for accordion item 1.</p>
+                <p>Welcome to Game Traders! We pride ourselves on offering a vast array of gaming options for enthusiasts of all ages. Whether you're into action-packed adventures, immersive role-playing games, or classic arcade fun, we have something for everyone. Our knowledgeable staff is here to assist you in finding the perfect game, console, or accessory to enhance your gaming experience. Explore our diverse collection and embark on countless gaming adventures with Game Traders!</p>
             </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" id="services-accordion">
             <input type="checkbox" id="accordion-item-2">
-            <label class="accordion-title" for="accordion-item-2"><i class="fas fa-chevron-down"></i> Accordion Item 2</label>
+            <label class="accordion-title" for="accordion-item-2"><i class="fas fa-chevron-down"></i> Store Services </label>
             <div class="accordion-content">
-                <p>Content for accordion item 2.</p>
+                <p>At Game Traders, we go beyond just providing top-notch gaming products; we offer exceptional in-store services to enhance your gaming experience. Our dedicated team provides expert advice, repairs, and customizations to ensure you get the most out of your gaming gear. From console repairs and hardware upgrades to personalized gaming setups and consultations, we're here to cater to your specific needs.</p>
             </div>
         </div>
-        <!-- Add more accordion items as needed -->
     </div>
 </section>
   <footer class="footer">
@@ -101,20 +54,18 @@
       <div class="footer-links">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
+          <li><a href="#services-accordion">Services</a></li>
+          <li><a href="#aboutus-accordion">About Us</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="footer-map">
-        <!-- Replace the following iframe with your embedded Google Map -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d397030.9522347897!2d-114.0799928!3d51.0473257!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffcbdd26d05%3A0xac5868bcb5677b93!2sDowntown%20Commercial%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1638592779709!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     </div>
     <p>&copy; <span id="currentYear"></span> Game Traders. All rights reserved.</p>
   </footer>
   <script>
-    // Set current year dynamically
     document.getElementById('currentYear').textContent = new Date().getFullYear();
   </script>
 </body>
