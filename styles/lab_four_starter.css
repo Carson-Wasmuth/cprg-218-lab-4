@@ -34,9 +34,10 @@ body {
 
 /* Hero Banner */
 .hero-container {
-  background-color: #161f5e; 
+  background: linear-gradient(rgba(109, 69, 255, 0.8), rgba(23, 20, 72, 0.8)), url('assets/herobanner.jpg') center/cover no-repeat;
   text-align: center;
   padding: 100px 0;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -59,12 +60,6 @@ body {
   color: #cccccc;
 }
 
-/* Hero Banner Image */
-.hero-container img {
-  max-width: 100%;
-  height: auto;
-}
-
 /* Buttons */
 .btn {
   display: inline-block;
@@ -74,6 +69,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(255, 69, 0, 0.4);
 }
 
 .btn:hover {
@@ -83,6 +79,8 @@ body {
 /* Content Section */
 .content-container {
   padding: 80px 0;
+  background: linear-gradient(to bottom, #161f5e, #1a1a1a);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .content-section {
@@ -113,6 +111,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .service h3 {
@@ -205,37 +204,163 @@ body {
   border: none;
   border-radius: 5px;
 }
-
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero-container {
+    padding: 80px 0; 
+  }
+
+  .hero-content {
+    max-width: 80%; 
+  }
+
   .hero-content h1 {
-      font-size: 2rem;
+    font-size: 2rem; 
   }
 
   .hero-content p {
-      font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .btn {
-      padding: 10px 20px;
+    padding: 15px 30px;
+    font-size: 1rem;
+  }
+
+  .content-container {
+    padding: 60px 0;
   }
 
   .content-section h2 {
-      font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .content-section p {
-      font-size: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .service {
+    max-width: 90%;
   }
 
   .service h3 {
-      font-size: 1.25rem;
+    font-size: 1.4rem;
   }
 
   .service p {
-      font-size: 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .accordion-item .accordion-content {
+    padding: 15px;
+  }
+
+  .footer {
+    padding: 40px 0;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-container {
+    padding: 100px 0;
+  }
+
+  .hero-content {
+    max-width: 70%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    padding: 20px 40px;
+    font-size: 1.1rem;
+  }
+
+  .content-container {
+    padding: 80px 0;
+  }
+
+  .content-section h2 {
+    font-size: 2rem;
+  }
+
+  .service {
+    max-width: 80%;
+  }
+
+  .service h3 {
+    font-size: 1.6rem;
+  }
+
+  .accordion-item .accordion-content {
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding: 120px 0;
+  }
+
+  .hero-content {
+    max-width: 60%;
+    text-align: left;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    padding: 25px 50px;
+    font-size: 1.2rem;
+  }
+
+  .content-container {
+    padding: 100px 0;
+  }
+
+  .content-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .service {
+    max-width: 70%;
+  }
+
+  .service h3 {
+    font-size: 1.8rem;
+  }
+
+  .service p {
+    font-size: 1rem;
+  }
+
+  .accordion-item .accordion-content {
+    padding: 25px;
+  }
+
+  .footer {
+    padding: 80px 0;
+  }
+}
+
 .accordion-item input[type="checkbox"] {
   display: none;
 }
